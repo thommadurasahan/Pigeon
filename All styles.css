@@ -1,4 +1,4 @@
-.footer, .header {
+.header, .hero, .footer {
     background-image: url('footer_background.png'); 
     background-repeat: no-repeat; 
     background-attachment: fixed; 
@@ -6,6 +6,5 @@
 }
 
 .four_div_in_footer {
-    text-anchor: middle;
     text-align: center;
 }
