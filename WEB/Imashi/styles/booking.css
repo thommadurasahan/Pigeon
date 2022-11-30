@@ -1,0 +1,140 @@
+/* "*" is the universal selector which selects all the html elements on the page */
+* {
+    padding: 0;
+    margin: 0;  
+    box-sizing: border-box;
+  }
+   
+
+/* CSS for section class textimage */
+  .textimage{ /* CSS for the image */
+    width: 100%;
+    height: 438px;
+    background-image: url('Images/4.jpg'); /* Link provided for the image */
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .textimage h1{ /* CSS for the text that is to be inserted in the image */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
+    font-size: 100px;
+    font-weight: 70;
+    font-style: normal;
+    border: none;
+    background: none;
+    padding: 12px 20px;
+    border-radius: 30px;
+  }
+   
+   
+/* CSS for section class bookingform */
+  .bookingform{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    font-weight: bold;
+    color: rgb(39, 77, 160);
+  }
+
+  .bookingform h2{ /* CSS for h2 heading */
+    font-size: 60px;
+    font-family: 'Snell Roundhand', 'cursive';
+  }
+
+  .bookingform p{ /* CSS for the tagline in <p> tag */
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+  }
+
+  .bookingform legend{ /* CSS for the legends "Customer Details" & "Booking Details" */
+    text-align: left;
+    font-size: 19px;
+    color: black;
+    background-color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .bookingform fieldset{ /* CSS for the fieldset which colors the backgrounds of the form */
+    background-color: rgb(13, 50, 129);
+    border: none;
+    margin-bottom: 25px;
+  }
+
+  .bookingform input{ /* CSS for input tags inside the form in class bookingform */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    width: 150px;
+    color: rgb(39, 77, 160);
+    font-size: 15px;
+    font-weight: bolder;
+    background-color: white;
+    border-color: rgb(13, 50, 129);
+  }
+
+  .row{ /* CSS for div class row */
+    display: flex;
+    justify-content: left;
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+
+  .form-col{ /* CSS for div class form-col */
+    flex-basis: 50%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    width: 40%;
+  }
+
+  .form-col p{ /* CSS for the <p> in div class form-col */
+    margin-left: 15px;
+    font-size: 18px;
+    display: block;
+    text-align: left;
+    color: white;
+  } 
+
+  .form-col input, select{ /* CSS for the <input> & <select> tags in div class form-col */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 8px;
+    width: 400px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 0px;
+    color: black;
+    font-size: 12px;
+    font-weight:lighter;
+    border-color: white;
+  }
+
+   
+   /* CSS for Section footer */
+  .footer{ /* CSS for the footer */
+    width: 100%;
+    height: 80px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    background: rgb(13, 50, 129);
+    text-align: center;
+  }
+
+  .footer p{  /* CSS for the <p> in the footer */
+    color: whitesmoke;
+    margin: 20px auto;
+    padding: 20px auto;
+  }
