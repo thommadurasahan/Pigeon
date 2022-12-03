@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+ <!-- This tells the browser that all the content are in English -->
+<html lang="en">
+
+    <head>
+
+        <!-- uft-8 is a character set that covers which covers almost all characters & symbols in the world -->
+        <meta charset="utf-8"/> 
+        <meta name="author" content="Imashi Gomes"/>
+        <title>
+            Travel.com
+        </title>
+
+        <!-- Links the external css to the html file -->
+        <link href= "Styles/booking.css" rel="stylesheet"/>
+
+    </head>
+
+    <body>
+
+        <!-- Section textimage to insert the text into an image -->
+        <section class="textimage">
+            <h1>
+                BOOK NOW  <!-- This text is inserted into an image -->
+            </h1>
+        <!-- End of section textimage -->
+        </section>
+
+        <!-- Section bookingform -->
+        <section class="bookingform">
+            <h2>
+                Book Your Trip
+            </h2>
+            <p>
+                Flight, Camera, Action!
+            </p>
+
+            <!-- Form -->
+            <form method="post" action="">
+                <!-- Fieldset for Customer Details -->
+                <fieldset>
+                    <!-- Legend for Customer Details Fieldset -->
+                    <legend>
+                        <h3>
+                            Customer Details
+                        </h3>
+                    </legend>
+                    <!-- Division for a row which consists of two columns -->
+                    <div class="row">
+                        <!-- Division for the first column -->
+                        <div class="form-col">
+                            <p>
+                                <!-- Label & Input for Name -->
+                                <label for="N"><b>Name :</b></label></br>
+                                <input type="text" name="N" id="N" placeholder="Enter your name" required/>
+                            </p>  
+                            <p>
+                                <!-- Label & Input for Email -->
+                                <label for="E"><b>Email :</b></label></br>
+                                <input type="email" name="E" id="E" placeholder="Enter your email" required/>
+                            </p>    
+                            <p>
+                                <!-- Label & Input for Address -->
+                                <label for="A"><b>Address :</b></label></br>
+                                <input type="text" name="A" id="A" placeholder="Enter your address" required/>
+                            </p>       
+                        </div>
+                        <!-- Ending Division for the first column -->
+                        <!-- Division for the second column -->
+                        <div class="form-col">
+                            <p>
+                                <!-- Label & Input for NIC No / Passport No -->
+                                <label for="P"><b>NIC No / Passport No :</b></label></br>
+                                <input type="text" name="P" id="P" placeholder="Enter your nic no / passport no" required/>
+                            </p> 
+                            <p>
+                                <!-- Label & Input for Phone No -->
+                                <label for="PN"><b>Phone No :</b></label></br>
+                                <input type="text" name="PN" id="PN" placeholder="Enter your phone no" required/>
+                            </p>
+                        </div>
+                        <!-- Ending Division for the second column -->
+                    </div>
+                    <!-- Ending Division for the row -->
+                </fieldset>
+                <!-- Ending Fieldset for Customer Details -->
+                <!-- Fieldset for Booking Details -->
+                <fieldset>
+                     <!-- Legend for Booking Details Fieldset -->
+                    <legend>
+                        <h3>
+                            Booking Details
+                        </h3>
+                    </legend>
+                    <!-- Division for a row which consists of two columns -->
+                    <div class="row">
+                        <!-- Division for the first column -->
+                        <div class="form-col">
+                            <p>
+                                <!-- Label & Input for Package -->
+                                <label for="Pack"><b>Package :</b></label></br>
+                                <select name="Pack" id="Pack" form="Pack" required>
+                                    <option value="" selected disabled>-- select an option --</option>
+                                    <option value="PackA">1 Night Package</option>
+                                    <option value="PackB">3 Nights Package </option>
+                                    <option value="PackC">6 Nights Package</option>
+                                    <option value="PackD">13 Nights Package</option>
+                                  </select>
+                            </p> 
+                            <p>
+                                <!-- Label & Input for No of Children -->
+                                <label for="Children"><b>No of Children :</b></label></br>
+                                <select name="Children" id="Children" form="Children" required>
+                                    <option value="" selected disabled>-- select an option --</option>
+                                    <option value="ChildrenA">1</option>
+                                    <option value="ChildrenB">2</option>
+                                    <option value="ChildrenC">3</option>
+                                    <option value="ChildrenD">4</option>
+                                    <option value="ChildrenE">5</option>
+                                    <option value="ChildrenF">6</option>
+                                    <option value="ChildrenG">7</option>
+                                    <option value="ChildrenH">8</option>
+                                    <option value="ChildrenI">9</option>
+                                    <option value="ChildrenJ">10</option>
+                                  </select>
+                            </p>  
+                            <p>
+                                <!-- Label & Input for Date -->
+                                <label for="Date"><b>Starting Date :</b></label></br>
+                                <input type="date" name="Date" id="Date" required/>
+                            </p>         
+                        </div>
+                        <!-- Ending Division for the first column -->
+                        <!-- Division for the second column -->
+                        <div class="form-col">
+                            <p>
+                                <!-- Label & Input for No of Adults -->
+                                <label for="Adults"><b>No of Adults :</b></label></br>
+                                <select name="Adults" id="Adults" form="Adults" required>
+                                    <option value="" selected disabled>-- select an option --</option>
+                                    <option value="AdultsA">1</option>
+                                    <option value="AdultsB">2</option>
+                                    <option value="AdultsC">3</option>
+                                    <option value="AdultsD">4</option>
+                                    <option value="AdultsE">5</option>
+                                    <option value="AdultsF">6</option>
+                                    <option value="AdultsG">7</option>
+                                    <option value="AdultsH">8</option>
+                                    <option value="AdultsI">9</option>
+                                    <option value="AdultsJ">10</option>
+                                  </select>
+                            </p>  
+                            <p>
+                                <!-- Label & Input for No of Vegeterians -->
+                                <label for="Veg"><b>No of Vegeterians :</b></label></br>
+                                <select name="Veg" id="Veg" form="Veg" required>
+                                    <option value="" selected disabled>-- select an option --</option>
+                                    <option value="VegA">1</option>
+                                    <option value="VegB">2</option>
+                                    <option value="VegC">3</option>
+                                    <option value="VegD">4</option>
+                                    <option value="VegE">5</option>
+                                    <option value="VegF">6</option>
+                                    <option value="VegG">7</option>
+                                    <option value="VegH">8</option>
+                                    <option value="VegI">9</option>
+                                    <option value="VegJ">10</option>
+                                  </select>
+                            </p> 
+                            <p>
+                                <!-- Label & Input for Other Details -->
+                                <label for="Other"><b>Other Details :</b></label></br>
+                                <input type="textarea" name="Other" id="Other" placeholder="Optional"/>
+                            </p> 
+                        </div>
+                        <!-- Ending Division for the second column -->
+                    </div>
+                    <!-- Ending Division for the row -->
+                </fieldset>
+                <!-- Ending Fieldset for Booking Details -->
+                <!-- Input for submit & reset buttons -->
+                <input type="submit" value="Submit"/>
+                <input type="reset" value="Reset Form"/>
+            <!-- End of form -->
+            </form>
+        <!-- End of section bookingform -->
+        </section>
+
+        <!-- Section for Footer -->
+        <section class="footer">
+            <p>Copyright @ 2022 All Rights Reserved- Travel.com</p>
+        </section>
+
+    </body>
+    
+</html>
