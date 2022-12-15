@@ -1,48 +1,71 @@
-/* Sahan - CSS for Header Section */
+/* Common CSS for All pages */
 
 .logo {
-    height:65px;
-    width:65px;
-    border-radius: 5px;
+  height:70px;
+  width:70px;
+  border-radius: 5px;
+  margin-left: 12px;
 }
 
+.navbar {
+  font-size: 18px;
+  background-color: rgb(13, 50, 129);
+}
 
+body {
+  background-color: rgb(13, 50, 129);
+}
 
+.hero_container {
+  position: relative;
+  text-align: center;
+}
 
+.hero_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0 1px 2px rgba (0,0, 0, .6);
+}
 
-/* Sahan - CSS for Footer Section */
+.underground {
+  height: 90px;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h2 {
+  font-family: 'Snell Roundhand', 'cursive';
+}
+
+p {
+  font-family: 'Times New Roman', Times, serif;
+}
 
 .copyright {
-    background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 
 
 
 
-/* Sahan - CSS for Home Page */
+/* CSS for Home Page */
 
-.hero {
-    background-image: url('Images/pexels-kanishka-ranasinghe-4169723 (2).jpg');
-    background-attachment: fixed;
+.card {
+  background-color:rgb(13, 50, 129);
 }
 
 
 
 
+/* CSS for Packages Page */
 
-/* Sahan - CSS for Packages Page */
-
-.package_catogory {
-    text-align: center;
-}
-
-.card-img {
-    align-self: center;
-    background-image: url('Images/pexels-kanishka-ranasinghe-4169723 (2).jpg');
-    background-repeat: no-repeat; 
-    background-attachment: fixed;
-    background-size: cover;
+.packages {
+  position: relative;
 }
 
 
@@ -50,306 +73,51 @@
 
 
 
-
-
-
-
-
-
-/* Imashi - CSS for Booking Page */
-
-/* "*" is the universal selector which selects all the html elements on the page */
-* {
-    padding: 0;
-    margin: 0;  
-    box-sizing: border-box;
-  }   
-
-/* CSS for section class textimage */
-  .textimage{ /* CSS for the image */
-    width: 100%;
-    height: 438px;
-    background-image: url('Images/4.jpg'); /* Link provided for the image */
-    background-position: bottom;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .textimage h1{ /* CSS for the text that is to be inserted in the image */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:white;
-    font-size: 100px;
-    font-weight: 70;
-    font-style: normal;
-    border: none;
-    background: none;
-    padding: 12px 20px;
-    border-radius: 30px;
-  }   
+/* CSS for Booking Page */
    
-/* CSS for section class bookingform */
-  .bookingform{
-    width: 70%;
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
-    font-weight: bold;
-    color: rgb(39, 77, 160);
-  }
-
-  .bookingform h2{ /* CSS for h2 heading */
-    font-size: 60px;
-    font-family: 'Snell Roundhand', 'cursive';
-  }
-
-  .bookingform p{ /* CSS for the tagline in <p> tag */
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 20px;
-  }
-
-  .bookingform legend{ /* CSS for the legends "Customer Details" & "Booking Details" */
-    text-align: left;
-    font-size: 19px;
-    color: black;
-    background-color: white;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .bookingform fieldset{ /* CSS for the fieldset which colors the backgrounds of the form */
-    background-color: rgb(13, 50, 129);
-    border: none;
-    margin-bottom: 25px;
-  }
-
-  .bookingform input{ /* CSS for input tags inside the form in class bookingform */
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 5px;
-    margin-bottom: 40px;
-    border-radius: 10px;
-    width: 150px;
-    color: rgb(39, 77, 160);
-    font-size: 15px;
-    font-weight: bolder;
-    background-color: white;
-    border-color: rgb(13, 50, 129);
-  }
-
-  .row{ /* CSS for div class row */
-    display: flex;
-    justify-content: left;
-    padding-top: 20px;
-    padding-bottom: 0px;
-  }
-
-  .form-col{ /* CSS for div class form-col */
-    flex-basis: 50%;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-    width: 40%;
-  }
-
-  .form-col p{ /* CSS for the <p> in div class form-col */
-    margin-left: 15px;
-    font-size: 18px;
-    display: block;
-    text-align: left;
-    color: white;
-  } 
-
-  .form-col input, select{ /* CSS for the <input> & <select> tags in div class form-col */
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 5px;
-    margin-bottom: 8px;
-    width: 400px;
-    margin-left: 0px;
-    margin-right: 0px;
-    border-radius: 0px;
-    color: black;
-    font-size: 12px;
-    font-weight:lighter;
-    border-color: white;
-  }
-   
-   /* CSS for Section footer */
-  .footer{ /* CSS for the footer */
-    width: 100%;
-    height: 80px;
-    padding-top: 15px;
-    padding-bottom: 20px;
-    background: rgb(13, 50, 129);
-    text-align: center;
-  }
-
-  .footer p{  /* CSS for the <p> in the footer */
-    color: whitesmoke;
-    margin: 20px auto;
-    padding: 20px auto;
-  }
-
-
-
-
-
-  /* Thilanka - CSS for Contact Page */
-
-  .Contact{ 
-    width: 100%;
-    height: 438px;
-    background-image: url('images/2.jpg'); 
-    background-position: bottom;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .Contact h1{ 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:white;
-    font-size: 100px;
-    font-weight: 70;
-    font-style: normal;
-    border: none;
-    background: none;
-    padding: 12px 20px;
-    border-radius: 30px;
-  }
-  
- .feedback{
-    width: 70%;
-    margin: auto;
-    text-align: center;
-    padding-top: 50px;
-    font-weight: bold;
-    color: rgb(39, 77, 160);
-  }
-
-  .feedback h2{ 
-    font-size: 60px;
-    font-family: 'Snell Roundhand', 'cursive';
-  }
-
-  .feedback p{ 
-    font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 20px;
-  }
-  .feedback textbox-style{ 
-    background-color: rgb(13, 50, 129);
-    border: none;
-    margin-bottom: 25px;
-  }
-
- body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
-  color:white;
- }
-
-* {
-    box-sizing: border-box;
+.bookingform {
+  width: 77%;
 }
 
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
+
+
+
+
+
+/* CSS For Contact Page */
+
+.feedback {
+  width: 79%;
 }
 
-input[type=submit] {
-  background-color: white;
-  color: rgb(13, 50, 129);
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+/* Creating aspect ratio box */
+.aspect_ratio_box {
+  position: relative;
+  overflow: hidden;
+  margin-top: 3rem;
+  padding-top: 45.0%; 
+  /* 20:9 Aspect Ratio (divide 9 by 20 = 0.45) */
 }
 
-.container {
-  border-radius: 5px;
-  background-color: rgb(13, 50, 129);
-  padding: 20px;
-}
-
-.map{
-  background-color: rgb(13, 50, 129);  
-}
-
+/* Styling iframe to fit in the container div with full height and width */
 iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   width: 100%;
-  border-radius: 30px;
-  margin-bottom: 35px;
+  height: 100%;
+  border-radius: 5px;
 }
 
 
 
 
 
-/* Dhanushka - CSS for About Page */
+/* CSS For About Page */
 
-
-  
-.KAU{ /* CSS for the image */
-    width: 100%;
-    height: 432px;
-    background-image: url('images/1.jpg');
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-	border-radius: 0%;
-  }
-  h1{ 
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:white;
-    font-size: 100px;
-    font-weight: 70;
-    font-style: normal;
-    border: none;
-    background: none;
-    padding: 12px 20px;
-    border-radius: 30px;
-  }
-  h2{ 
-    font-size: 60px;
-	text-align: center;
-    font-family: 'Snell Roundhand', 'cursive';
-  }
-  .nsbm{ 
-	text-align: justify;
-	font-size: 18px;
-    font-family: 'Snell Roundhand', 'cursive';
-	background-color:;
-  }
-
- /* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-  float: left;
-  width: 32%;
-  padding: 5px;
+.description {
+  font-size: 20px;
+  font-family: 'Snell Roundhand', 'cursive';
 }
-
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-} 
-
-
